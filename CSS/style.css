@@ -1,0 +1,25 @@
+body {
+  color:rgb(0,0,0);
+  font-family: "Courier New", "Lucida Console", Times, Serif
+  margin: 0px;
+  align-items: center;
+}
+img{
+  display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 130px;
+}
+p{
+  text-align: center;
+  color: rgb:(106,90,205);
+  font-family: "Lucida Console", serif;
+  font-size: 2em;
+}
+.dest_container {
+	background-image: url("mountains.jpg");
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
