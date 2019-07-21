@@ -1,0 +1,104 @@
+.navbar-header {
+	background-color: black;
+	color: white;
+}
+
+
+.lonesome {
+	width: 200px;
+	position: absolute;
+	top: 0px;
+
+}
+
+.navbar-light {
+	background-color: transparent;
+	color: white;
+	align-content: center;
+	border: transparent;
+	font-size: 50px;
+}
+
+body {
+	background-size: cover;
+	min-height: 100%;
+	background-image: url("../Images/lake.jpg");
+}
+
+form {
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	font-family: open sans;
+	font-size: 14px;
+	color: white;
+	letter-spacing:0.3em;
+}
+
+h1 {
+	padding-top: 100px;
+	font-family: open sans;
+	font-size: 22px;
+	color: rgb(9, 37, 81);
+	text-align: center;
+}
+
+p {
+
+	font-family: open sans;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}
+
+.submit-button {
+	background-color: white;
+	color: black;
+}
+
+.countryselect {
+	color: black;
+}
+
+.fa-facebook {
+  background: transparent;
+  color: #3B5998;
+  size: 40px;
+
+}
+
+.fa-twitter {
+  background: transparent;
+  color: #55ACEE;
+  size: 40px;
+}
+
+.fa-instagram {
+  background: transparent;
+  color: #125688;
+  size: 40px;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black
+  color: white;
+}
+
+.topnav a.active {
+  background-color: lightblue;
+  color: white;
+}
