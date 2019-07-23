@@ -27,7 +27,7 @@ body {
     background-image: url("https://preppywallpapers.com/wp-content/uploads/2018/12/Blue-iPhone-Wallpapers-9.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
 
     background-attachment: scroll;
 }
