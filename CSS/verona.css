@@ -70,3 +70,6 @@ img{
   background-color: lightblue;
   color: white;
 }
+.floatRight{
+  float:right;margin-left:0px; align-items:right;
+}
