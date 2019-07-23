@@ -45,6 +45,24 @@ dl{
 img{
   margin-left:300px;
 }
+.navbar-header {
+	background-color: black;
+	color: white;
+}
+
+.lonesome {
+	width: 200px;
+	position: absolute;
+	top: 0px;
+}
+
+.navbar-light {
+	background-color: transparent;
+	color: white;
+	align-content: center;
+	border: transparent;
+	font-size: 50px;
+}
 
 .topnav {
   background-color: #333;
