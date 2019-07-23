@@ -32,7 +32,7 @@ body {
 }
 img{
   display: inline;
-    padding: 20px;
+    padding: 30px;
     margin: 0 auto;
     border-radius: 130px;
     margin-left: 200px
@@ -42,13 +42,27 @@ ol{
   color: rgb(0,0,0);
   font-family: "Lucida Console", serif;
   font-size: 2em;
-  margin-left:400px;
+  margin-left:500px;
   margin-right:400px;
   border-style: hidden;
   border-width: medium;
   background-color: rgba(255,255,255,0.4);
 
 }
+
+ol {
+    margin:0px 0;
+    padding:0;
+}
+
+ol li
+{
+    margin: 0px;
+    padding: 1px;
+    text-indent: 0;
+    margin-left: 3.4em;
+}
+
 h3{
   text-align: center;
   color: rgb(0,0,0);
