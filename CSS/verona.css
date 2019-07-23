@@ -1,18 +1,18 @@
 body {
   color:rgb(0,0,0);
-  font-family: "Courier New", "Lucida Console", Times, Serif;
+  font-family: "Verdana, Geneva," sans-serif;
   margin-left:50px;
 }
 p{
 
   color: rgb(0,0,0);
-  font-family: "Lucida Console", serif;
+  font-family: "Verdana, Geneva," sans-serif;
   font-size: 2em;
   margin-left: 50px;
 }
 h1{
   color:rgb(0,0,0);
-  font-family: "Lucida Console", serif;
+  font-family: "Verdana, Geneva," sans-serif;
   font-size: 2em;
   margin-left: 50px
 }
@@ -20,7 +20,6 @@ body {
     background: linear-gradient(white, purple);
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 400px;
     background-attachment: scroll;
 
 }
@@ -29,12 +28,23 @@ body{
   align-content: center;
   margin-left: : 50px
 }
+.section{
+  width:55%
+}
+
+.img-section{
+  width:35%;
+  float:right;
+  margin-right: 20px;
+  height:10%;
+}
+
 
 dl{
 align-items:center;
 color: rgb(0,0,0);
 font-size: 1.3em;
-font-family: "Lucida Console", serif;
+font-family: "Verdana, Geneva," sans-serif;
 margin-left: 50px;
 margin-right:400px;
 }

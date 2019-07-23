@@ -27,7 +27,7 @@ li a:hover:not(.active) {
 }
 body {
   color:rgb(0,0,0);
-  font-family: "Courier New", "Lucida Console", Times, Serif;
+  font-family: "Verdana, Geneva," sans-serif;;
   align-items:center;
 }
 img{
@@ -40,7 +40,7 @@ img{
 ol{
   text-align: center;
   color: rgb(0,0,0);
-  font-family: "Lucida Console", serif;
+  font-family: "Verdana, Geneva," sans-serif;;
   font-size: 2em;
   margin-left:500px;
   margin-right:400px;
