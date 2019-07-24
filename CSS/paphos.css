@@ -20,8 +20,8 @@
 body {
 	background-size: cover;
 	min-height: 100%;
-	background-image: url("../Images/paphos-cyprus.jpg");
   color:rgb(0,0,0);
+	background-image: url("../Images/paphos-cyprus.jpg");
   font-family: "Courier New", "Lucida Console", Times, Serif;
   margin-left:50px;
   align-items:center;
@@ -29,7 +29,7 @@ body {
 
 p {
   margin-left:50px;
-	font-family: open sans;
+	font-family: "Verdana, Geneva," sans-serif;
 	color: white;
 	font-size: 14px;
 	text-align: center;
@@ -37,7 +37,7 @@ p {
 
 h1 {
 	padding-top: 100px;
-	font-family: open sans;
+	font-family: "Verdana, Geneva," sans-serif;
 	font-size: 22px;
 	color: white;
 	text-align: center;
