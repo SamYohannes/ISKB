@@ -1,3 +1,4 @@
+{% extends "CarryOn.html" %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,8 +6,7 @@
     <title> Ireland </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./CSS/lux.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/ireland.css') }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -60,7 +60,7 @@
   <h3 style="text-align:center;"> Prepare to be introduced to a wonderful place in the world. </h3>
   </div>
 
- <img src="./images/irish_sky_garden_skibbereen.jpg" alt="Irish Sky Garden">
+ <img src="./static/images/irish_sky_garden_skibbereen.jpg" alt="Irish Sky Garden">
 
 <div>
   <h2> Where To Stay </h2>
@@ -73,9 +73,22 @@
     <p>   </p>
 </div>
 
-<div>
-  <b> Follow us on Instagram, Facebook and Twitter. If you would like to contribute to the blog, email us at carryon.org.uk </b>
-</div>
+  <div>
+    <footer class="panel-footerabout" align="center">
+      <a href="https://twitter.com/CodeFirstGirls" class="social" target="_blank">
+        <img title="Twitter" alt="Twitter" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="100px" height="100px">
+      </a>
+      <a href="https://en-gb.facebook.com/codefirstgirls/" class="social" target="_blank">
+        <img title="Facebook" alt="Facebook" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="100px" height="100px">
+      </a>
+      <a href="https://www.linkedin.com/company/code-first-girls" class="social" target="_blank">
+        <img title="LinkedIn" alt="LinkedIn" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="100px" height="100px">
+      </a>
+      <a href="https://www.instagram.com/codefirstgirls/" class="social" target="_blank">
+        <img title="Instagram" alt="Instagram" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="100px" height="100px">
+      </a>
+    </footer>
+  </div>
 
 <button> This is really helpful </button>
 <button> This is how this could be more helpful </button>

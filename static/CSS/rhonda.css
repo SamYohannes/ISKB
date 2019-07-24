@@ -19,12 +19,6 @@ h1{
   font-size: 2em;
 }
 
-body {
-    background: radial-gradient(circle, pink, lightpink, white);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-}
 
 .section{
   width:55%

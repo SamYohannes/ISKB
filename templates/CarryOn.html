@@ -3,52 +3,65 @@
 <head>
   <title> Carry On </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./CSS/lux.css">
-  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}" />
 
 </head>
 
 <body>
   <div class="topnav">
-    <a class=active href="./templates/CarryOn.html">Home</a>
+    <a class=active href="./CarryOn.html">Home</a>
     <a href="./templates/Aboutus.html">About Us</a>
-    <a href="./templates/Destinations.html">Destinations</a>
-    <a href="./templates/Findbuddy.html">Find a travel buddy</a>
+    <a href="./Destinations.html">Destinations</a>
+    <a href="./Findbuddy.html">Find a travel buddy</a>
   </div>
   <div>
 
   <div>
     <br>
     <br>
-    <img style="align:center; margin-right:200px; margin-left:400px;"src="./images/carryon.png" alt="Carry On" width="800">
+    <img style="align:center; margin-right:200px; margin-left:400px;"src="./static/images/carryon.png" alt="Carry On" width="800">
     <p>
     <strong>We are here to help you explore Europe in style, without breaking your bank account!</strong><br>Click on a countries name below to see our advice for that country.
     </p>
   </div>
   <div>
       <map name="workmap">
-        <area shape="circle" coords="400, 950, 100" alt="Rhonda" href="./templates/Rhonda.html">
-        <area shape="circle" coords="250, 930, 50" alt="Portugal" href="./templates/Porto.html">
-        <area shape="circle" coords="740, 890, 50" alt="Italy" href="./templates/verona.html">
-        <area shape="circle" coords="600, 680, 30" alt="Belgium" href="./templates/bruges.html">
-        <area shape="circle" coords="1270, 1100, 100" alt="Cyrpus" href="./templates/paphos.html">
-        <area shape="circle" coords="550, 790, 100" alt="France" href="./templates/marseille.html">
-        <area shape="circle" coords="800, 780, 50" alt="Austria" href="./templates/">
-        <area shape="circle" coords="780, 1100, 50" alt="Malta" href="./templates/Valletta.html">
-        <area shape="circle" coords="800, 300, 70" alt="Sweden" href="./templates/Sweden.html">
-        <area shape="circle" coords="700, 660, 70" alt="Germany" href="./templates/Germany.html">
-        <area shape="circle" coords="400, 550, 50" alt="Ireland" href="./templates/Ireland.html">
-        <area shape="circle" coords="1000, 800, 50" alt="Romania" href="./templates/Romania.html">
+        <area shape="circle" coords="400, 950, 100" alt="Rhonda" href="./Rhonda.html">
+        <area shape="circle" coords="250, 930, 50" alt="Portugal" href="./Porto.html">
+        <area shape="circle" coords="740, 890, 50" alt="Italy" href="./verona.html">
+        <area shape="circle" coords="600, 680, 30" alt="Belgium" href="./bruges.html">
+        <area shape="circle" coords="1270, 1100, 100" alt="Cyrpus" href="./paphos.html">
+        <area shape="circle" coords="550, 790, 100" alt="France" href="./marseille.html">
+        <area shape="circle" coords="800, 780, 50" alt="Austria" href="./">
+        <area shape="circle" coords="780, 1100, 50" alt="Malta" href="./Valletta.html">
+        <area shape="circle" coords="800, 300, 70" alt="Sweden" href="./Sweden.html">
+        <area shape="circle" coords="700, 660, 70" alt="Germany" href="./Germany.html">
+        <area shape="circle" coords="400, 550, 50" alt="Ireland" href="./Ireland.html">
+        <area shape="circle" coords="1000, 800, 50" alt="Romania" href="./Romania.html">
       </map>
-      <img style="align:center; margin:100px;"src= "./images/EuropePolitical.jpg" alt="Europe Map" usemap= "#workmap" width="1500">
+      <img style="align:center; margin:100px;"src= "./static/images/EuropePolitical.jpg" alt="Europe Map" usemap= "#workmap" width="1500">
 
   </div>
+
   <div>
-  <button class="btn btn-primary" type="submit">Subscribe</button>
-
-</div>
-
-
+    <footer class="panel-footerabout" align="center">
+      <a href="https://twitter.com/CodeFirstGirls" class="social" target="_blank">
+        <img title="Twitter" alt="Twitter" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="100px" height="100px">
+      </a>
+      <a href="https://en-gb.facebook.com/codefirstgirls/" class="social" target="_blank">
+        <img title="Facebook" alt="Facebook" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="100px" height="100px">
+      </a>
+      <a href="https://www.linkedin.com/company/code-first-girls" class="social" target="_blank">
+        <img title="LinkedIn" alt="LinkedIn" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="100px" height="100px">
+      </a>
+      <a href="https://www.instagram.com/codefirstgirls/" class="social" target="_blank">
+        <img title="Instagram" alt="Instagram" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="100px" height="100px">
+      </a>
+    </footer>
+  </div>
+  <br>
+  <br>
+  <br>
 </body>
 </html>
 

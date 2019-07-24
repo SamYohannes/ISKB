@@ -1,3 +1,4 @@
+
 # http://flask.pocoo.org/docs/1.0/
 
 # pip is a Python package manager (like a vast plugin library)
@@ -15,6 +16,25 @@ def index():
     # same thing) we fire this function which returns a string which is displayed
     # in the browser
     return render_template('./CarryOn.html')
+
+app.static_folder = 'static'
+
+@app.route("/AboutUs")
+def Aboutus():
+
+    return render_template('./AboutUs.html')
+
+@app.route("/bruges")
+def bruges():
+
+    return render_template('./bruges.html')
+
+@app.route("/Destinations")
+def destinations():
+
+    return render_template('./Destinations.html')
+
+
 
 # POST EMAIL FORM ACTION
 @app.route("/email", methods=['POST'])

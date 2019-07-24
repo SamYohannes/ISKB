@@ -16,13 +16,7 @@ h1{
   font-size: 2em;
   margin-left: 50px
 }
-body {
-    background: radial-gradient(circle, aqua, lightblue, white);
-    background-repeat: no-repeat;
-    background-position: center;
-    /*margin-right: 600px;*/
-    background-attachment: scroll;
-}
+
 body{
   align-items: center;
   align-content: center;
