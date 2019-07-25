@@ -1,68 +1,47 @@
-{% extends "CarryOn.html" %}
-<!doctype html>
-<html>
-<head>
-  <title> Carry On | Destinations </title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/Destinations.css') }}" />
+{% extends "base.html" %}
+{% block title %}Destinations{% endblock %}
 
-</head>
+{% block head_css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/Destinations.css')}}"></link>
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" text="text/css" href="/static/CSS/destinations.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <body>
+  <body background="./static/images/destinations.jpg">
+
   <ul>
-    <li><a href="./CarryOn.html">Home</a></li>
-    <li><a href="./AboutUs.html">About Us</a></li>
-    <li><a class="active" href="./Destinations.html">Destinations</a></li>
-    <li><a href="./Findbuddy.html">Find a Travel Buddy</a></li>
+    <li><a href="/CarryOn">Home</a></li>
+    <li><a href="/AboutUs">About Us</a></li>
+    <li><a class="active" href="/Destinations">Destinations</a></li>
+    <li><a href="/Findbuddy">Find a Travel Buddy</a></li>
   </ul>
 
   <div>
-    <img style="align:center;padding:1px 16px;" src="./static/images/carryon.png" alt="Carry On" width="800">
+    <img src="./static/images/carryon.png" alt="Carry On" width="800">
     <h3> If you'd rather a list instead of the interactive map here we go! Below are the destinations we have written about. </h3>
     <ol type="1">
-      <a href="./bruges.html"><li>Bruges</li></a>
-      <a href="./marseille.html"><li>Marseille</li></a>
-      <a href="./paphos.html"><li>Paphos</li></a>
-      <a href="./Porto.html"> <li>Porto</li>
+      <a href="/bruges"><li>Bruges</li></a>
+      <a href="/marseille"><li>Marseille</li></a>
+      <a href="/paphos"><li>Paphos</li></a>
+      <a href="/Porto"> <li>Porto</li>
       <li>Salzburg</li>
-      <a href="./Rhonda.html"><li>Ronda</li></a>
-      <a href="./Romania.html"><li>Romania</li></a>
-      <a href="./verona.html"><li>Verona</li></a>
-      <a href="./Valetta.html"><li>Valletta</li>
-      <a href="./Sweden.html"><li>Sweden</li>
-      <a href="./Germany.html"><li>Germany</li>
-      <a href="./Ireland.html"><li>Ireland</li>
+      <a href="/Rhonda"><li>Ronda</li></a>
+      <a href="/Romania"><li>Romania</li></a>
+      <a href="/verona"><li>Verona</li></a>
+      <a href="/Valetta"><li>Valletta</li>
+      <a href="/Sweden"><li>Sweden</li>
+      <a href="/Germany"><li>Germany</li>
+      <a href="/Ireland"><li>Ireland</li>
     </ol>
     <br>
     <br>
     <br>
-
-
-</div>
-<div>
-  <footer class="panel-footerabout" align="center">
-    <a href="https://twitter.com/CodeFirstGirls" class="social" target="_blank">
-      <img title="Twitter" alt="Twitter" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="100px" height="100px">
-    </a>
-    <a href="https://en-gb.facebook.com/codefirstgirls/" class="social" target="_blank">
-      <img title="Facebook" alt="Facebook" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="100px" height="100px">
-    </a>
-    <a href="https://www.linkedin.com/company/code-first-girls" class="social" target="_blank">
-      <img title="LinkedIn" alt="LinkedIn" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="100px" height="100px">
-    </a>
-    <a href="https://www.instagram.com/codefirstgirls/" class="social" target="_blank">
-      <img title="Instagram" alt="Instagram" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="100px" height="100px">
-    </a>
-  </footer>
-</div>
-</body>
-</html>
-
-
-
+  </div>
 
 
 
 </body>
-
-</html>
+{% endblock %}

@@ -1,22 +1,23 @@
-{% extends "CarryOn.html" %}
-<!doctype html>
-<html>
-<head>
-<style>
-  body {align: center}
-</style>
-  <title> Carry On | Valletta </title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/valletta.css') }}" />
-</head>
+{% extends "base.html" %}
+{% block title %}Valletta{% endblock %}
 
+{% block head_css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/valetta.css')}}"></link>
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/bootstrap.css')}}"></link>
+
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" text="text/css" href="/static/CSS/valletta.css">
+<link rel="stylesheet" text="text/css" href="/static/CSS/bootstrap.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <body>
   <div class="topnav">
-    <a href="./CarryOn.html">Home</a>
-    <a href="./Aboutus.html">About Us</a>
-    <a href="./Destinations.html">Destinations</a>
-    <a href="./Findbuddy.html">Find a travel buddy</a>
+    <a href="/CarryOn">Home</a>
+    <a href="/AboutUs">About Us</a>
+    <a href="/Destinations">Destinations</a>
+    <a href="/Findbuddy">Find a travel buddy</a>
   </div>
 
 
@@ -55,21 +56,6 @@
        <dt> il Pup </dt>
        <dd></dd>
     </dl>
-    <div>
-      <footer class="panel-footerabout" align="center">
-        <a href="https://twitter.com/CodeFirstGirls" class="social" target="_blank">
-          <img title="Twitter" alt="Twitter" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="100px" height="100px">
-        </a>
-        <a href="https://en-gb.facebook.com/codefirstgirls/" class="social" target="_blank">
-          <img title="Facebook" alt="Facebook" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="100px" height="100px">
-        </a>
-        <a href="https://www.linkedin.com/company/code-first-girls" class="social" target="_blank">
-          <img title="LinkedIn" alt="LinkedIn" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="100px" height="100px">
-        </a>
-        <a href="https://www.instagram.com/codefirstgirls/" class="social" target="_blank">
-          <img title="Instagram" alt="Instagram" class="socialbutton" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="100px" height="100px">
-        </a>
-      </footer>
-    </div>
+
   </body>
-</html>
+{% endblock %}

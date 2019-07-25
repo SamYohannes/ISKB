@@ -1,56 +1,65 @@
-{% extends "CarryOn.html" %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Paphos | Carry On </title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/paphos.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/bootstrap.css') }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
+{% extends "base.html" %}
+{% block title %}paphos{% endblock %}
 
-<body background="./static/images/paphos-cyprus.jpg">
+{% block head_css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/paphos.css')}}"></link>
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" text="text/css" href="/static/CSS/paphos.css">
+<link rel="stylesheet" text="text/css" href="/static/CSS/bootstrap.css">
+
+<body background="./static/images/backgroundall.jpg">
   <div class="topnav">
-    <a href="./CarryOn.html">Home</a>
-    <a href="./Aboutus.html">About Us</a>
-    <a href="./Destinations.html">Destinations</a>
-    <a href="./Findbuddy.html">Find a travel buddy</a>
+    <a href="/CarryOn">Home</a>
+    <a href="/AboutUs">About Us</a>
+    <a href="/Destinations">Destinations</a>
+    <a href="/Findbuddy">Find a travel buddy</a>
   </div>
-
-      <h1 style="color:white;">Paphos, Cyprus</h1>
-
-    <div>
-      <p style="background-color:black;"> Located in the southwest coast of the small Mediterranean island, this ancient city is the site of some must-see mythical and marvelous sites. </p>
+  <div>
+    <img src= "./static/images/carryon.png" alt= "Carry On" width="800" align=center>
+      <p><strong>Paphos, Cyprus</strong> Located in the southwest coast of the small Mediterranean island, this ancient city is the site of some must-see mythical and marvelous sites. </p>
     </div>
-
-    <h1 style="color:white;"> What to do in Paphos </h1>
-      <dl>
-        <dt> Coral Bay </dt>
+    <br>
+    <div>
+    <h1> What to do in Paphos: </h1>
+    <img class="img-section" src= "./static/images/paphos-cyprus.jpg" alt="Paphos" class="floatRight">
+      <dl class="section">
+        <dt> <strong>Coral Bay</strong></dt>
         <dd>Located in the Peyia municipality of Paphos, this is the perfect place to catch the sunset and bask at the beauty of the mediterranean sea. While there, make sure to check out the sea caves and the shipwreck located just 200 metres apart. This beach of soft white sand is tourist favourite.</dd>
-        <dt>Kouklia, Cyprus</dt>
+        <dt><strong>Kouklia, Cyprus</strong></dt>
         <dd>This village within the Paphos district is located in Palaepaphos, which is said to be the birthplace of Greek goddess of love and beauty Aphrodite. Make a journey to this scenic locale to explore the beach and the nearby “Petra tou Romiou,” also known as Aphrodite’s Rock, as well as the Sanctuary of Aphrodite. This archeological site was the first place in Cyprus to be inducted into the World Heritage List of UNESCO in 1980.</dd>
-        <dt>Paphos Castle</dt>
+        <dt><strong>Paphos Castle</strong></dt>
         <dd>Located at the edge of the city’s harbour, this Medieval-style building has, over the years, been rebuilt and repurposed to function as a prison, warehouse for salt while the island was under British occupation and now a tourist attraction and site of thematic exhibits. Its rich history and picturesque location makes it a must-see. Admission should not cost more than a couple pounds.</dd>
       </dl>
-    <h1 style="color:white;"> Where to stay in Paphos </h1>
-      <dl>
-        <dt>Pyramos</dt>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+    <h1> Where to stay in Paphos: </h1>
+    <img class="img-section" src= "./static/images/paphos.jpg" alt="Paphos" class="floatRight">
+      <dl class="section">
+        <dt><strong>Pyramos</strong></dt>
         <dd> Clean, minimalist rooms, includes free breakfast. There is also a cafe with a terrace on-site. The hostel is conveniently located a 4-minute walk from Alykes Beach, 3 km from the Tombs of the Kings (ruins of an ancient necropolis) and 1 km from the Archaeological Park of Kato Pafos.</dd>
-        <dt>Panklitos</dt>
+        <dt><strong>Panklitos<strong></dt>
         <dd> In a residential area, this unassuming apartment hotel is a 10-minute walk from the Tombs of the Kings, an ancient necropolis, 2 km from Faros Beach and 17 km from Paphos International Airport. The rooms are simply furnished and the hotel features an outdoor pool and an open air bar.</dd>
-        <dt>Trip Yard Paphos</dt>
+        <dt><strong>Trip Yard Paphos</strong></dt>
         <dd>If a bargain is what you’re looking for, then this hostel is an ideal choice, as it is situated in walking distance of the major sites and leaves you with some spare cash to spend on more experiences on the island.</dd>
       </dl>
-  <h1 style="color:white;"> Where to eat in Paphos </h1>
-      <dl>
-        <dt>Yialos Taverna</dt>
-        <dd> Nestled along the shore of the bay, this is the perfect place to experience authentic Cypriot cuisine.</dd>
-        <dt>Eleonas Restaurant</dt>
-        <dd>While in Kouklia, make sure to enjoy a nice dinner amidst abundant plant life, This restaurant is a paradise in its own right.</dd>
-        <dt>Laona Restaurant</dt>
-        <dd>Nestled in a side street in the old town, this hidden gem is worth checking out. The menu features an array of affordable and traditional Cypriot dishes. The large portions, great service and home feel of the restaurant are just a few of the great qualities to look forward to.</dd>
-      </dl>
+    </div>
+    <div>
+      <h1> Where to eat in Paphos: </h1>
+      <img class="img-section" src= "./static/images/paphos1.jpg" alt="Paphos" class="floatRight">
+        <dl class="section">
+          <dt><strong>Yialos Taverna</strong></dt>
+          <dd> Nestled along the shore of the bay, this is the perfect place to experience authentic Cypriot cuisine.</dd>
+          <dt><strong>Eleonas Restaurant</strong></dt>
+          <dd>While in Kouklia, make sure to enjoy a nice dinner amidst abundant plant life, This restaurant is a paradise in its own right.</dd>
+          <dt><strong>Laona Restaurant</strong></dt>
+          <dd>Nestled in a side street in the old town, this hidden gem is worth checking out. The menu features an array of affordable and traditional Cypriot dishes. The large portions, great service and home feel of the restaurant are just a few of the great qualities to look forward to.</dd>
+        </dl>
+      </div>
 
   </body>
-
-</html>
+{% endblock %}
