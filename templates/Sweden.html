@@ -4,91 +4,88 @@
 {% block head_css %}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='CSS/sweden.css')}}"></link>
-    <link rel="stylesheet" href="{{url_for('static',filename='CSS/bootstrap.css')}}"></link>
 {% endblock %}
 {% block content %}
 <link rel="stylesheet" text="text/css" href="/static/CSS/sweden.css">
 <link rel="stylesheet" text="text/css" href="/static/CSS/bootstrap.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <body>
-    <body style="background-color:lightskyblue;">
-
-
-      <div class="topnav">
-          <a href="./CarryOn.html">Home</a>
-            <a href="./Aboutus.html">About Us</a>
-            <a href="./Destinations.html">Destinations</a>
-          <a href="./Findbuddy.html">Find a travel buddy</a>
-      </div>
-
-
-    <div class="container">
-
+<body background="./static/images/backgroundall.jpg">
+    <div class="topnav">
+      <a href="/CarryOn">Home</a>
+      <a href="/AboutUs">About Us</a>
+      <a href="/Destinations">Destinations</a>
+      <a href="/Findbuddy">Find a travel buddy</a>
     </div>
 
+    <div>
+      <img src= "./static/images/carryon.png" alt= "Carry On" width="800" align=center>
+      <p>
+        <strong> Jokkmokk, Sweden; Hej! Which is Sweden, means hello.</strong> <br> a municipality in Sweden, home of the Sámi people, and reindeers
+      </p>
+    </div>
+    <br>
 
-<div>
-   <h1 style="text-align:center;"> Sweden | Carry On </h1>
-    <h3 style="text-align:center;"> Hej! Which in Swedish, means 'hello'. Today's focus is Jokkmokk, a municipality in Sweden, home of the Sámi people, and reindeers. </h3>
-</div>
+    <div>
+      <h1>What to do in Jokkmokk:</h1>
+      <img class="img-section" src= "./static/images/reindeerface_jokkmokk.jpg" alt="Jokkmokk" class="floatRight">
+        <dl class="section">
+          <dt><strong>Reindeer</strong></dt>
+          <dd>Merry christmas, your dream to ride a reindeer is about to come true.</dd>
+          <dt><strong>Northern Lights</strong></dt>
+          <dd> The Northern Lights are something that's on everyone's bucket list. If you haven't seen them yet get ready. Oh and the beautiful site is absolutly free!!</dd>
+          <dt><strong>Sareks National Park</strong></dt>
+          <dd>No trails, no nothing. Just wilderness. Europe’s first national park and on the UN list.<br> Bring a Garmin Iridium or a topographic map & compass so you don’t get lost; cell phones are worthless</dd>
+        </dl>
+      </div>
 
+      <br>
+      <br>
 
-<div>
-   <h2> What To Do </h2>
-    <p> Merry christmas, your dream to ride a reindeer is about to come true. </p>
-
-     <img src="./static/images/reindeerface_jokkmokk.jpg" alt="Reindeer's face">
-
-    <img src="./static/images/reindeer_jokkmokk.jpg" alt="Reindeer herd">
-  <img src="./static/images/reindeer_race_jokkmokk.jpg" alt="Reindeer race">
-
-
-<div>
-   <p> See the Northern Lights. </p>
-    <img src="images/northlights_jokkmokk.jpg" alt="Northern Lights">
-</div>
-
-
-<div>
-   <h2> Where To Stay </h2>
-
-    <p> Aside from, Air BnB and Booking.com, there's...  </p>
-     <img src="igloo_jokkmokk.jpg" alt="igloo home">
-
-  <p> Hotel Jokkmokk </p>
-  <img src="hotel_jokkmokk.jpg" alt="Hotel Jokkmokk">
-
-  <p> Arctic Camp Jokkmokk </p>
-<img src="arctic_camp_jokkmokk.jpg" alt="Arctic Camp">
-</div>
-
-
-<div>
-   <h2> Where To Eat </h2>
-
-    <p> Hotel Jokkmokk Again! </p>
-     <img src="hotel_jokkmokk.jpg" alt="Hotel Jokkmokk">
-
-      <p> Restaurang Ajtte </p>
-       <img src="ajitte_jokkmokk.jpg" alt="Ajitte Restaurant">
-
-    <p> Viddernas Cafe & Deli </p>
-      <img src="viddernas_jokkmokk.jpg" alt=" Viddernas Restaurant">
-</div>
-
-
-<div>
-   <b> Well then! Det är en dag imorgon också, which in Swedish means, 'there is a day tomorrow as well'. ;) </b>
-</div>
-
-
-<div>
- <button> This is really helpful </button>
- <button> This is how this could be more helpful </button>
-</div>
+      <div>
+        <h1>Where to stay in Jokkmokk:</h1>
+        <img class="img-section" src= "./static/images/igloo_jokkmokk.jpg" alt="Jokkmokk" class="floatRight">
+          <dl class="section">
+            <dt><strong>Hotel Jokkmokk</strong></dt>
+            <dd>Set in green surroundings, right by Lake Talvatis, this Lapland hotel is just 8 minutes’ walk from Jokkmokk Station. <br>It offers regional cuisine and free Wi-Fi, gym and sauna access.</dd>
+            <dt><strong>Artic Camp Jokkmokk</strong></dt>
+            <dd> A warm welcome to a family-oriented camping site with free admission to the swimming pool, free showers and free rides on the water slide. </dd>
+          </dl>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div>
+          <h1>Where to eat in Jokkmokk:</h1>
+          <img class="img-section" src= "./static/images/ajitte_jokkmokk.jpg" alt="Jokkmokk" class="floatRight">
+            <dl class="section">
+              <dt><strong>Hotel Jokkmokk</strong></dt>
+              <dd>Again we know. It's just that good.</dd>
+              <dt><strong>Restaurang Ajtte</strong></dt>
+              <dd> Gourmet meals in a beautiful setting.</dd>
+              <dt><strong>Viddernas Cafe and Deli</strong></dt>
+              <dd>Known for great food and a great atmosphere.</dd>
+            </dl>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div>
+            <p> Well then! Det är en dag imorgon också, which in Swedish means, 'there is a day tomorrow as well'. ;) </p>
+          </div>
 
 
   </body>
-</html>
 {% endblock %}

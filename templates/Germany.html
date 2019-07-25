@@ -8,119 +8,66 @@
 {% block content %}
 <link rel="stylesheet" text="text/css" href="/static/CSS/germany.css">
 <link rel="stylesheet" text="text/css" href="/static/CSS/bootstrap.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<head>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <body background="./static/images/backgroundall.jpg">
+      <div class="topnav">
+        <a href="/CarryOn">Home</a>
+        <a href="/AboutUs">About Us</a>
+        <a href="/Destinations">Destinations</a>
+        <a href="/Findbuddy">Find a travel buddy</a>
+      </div>
+      <div>
+        <img src= "./static/images/carryon.png" alt= "Carry On" width="800" align=center>
+        <p>
+          <strong> Bonn, Germany; A student hub</strong> <br> birthplace of Beethoven, bursting with beer and blossoms.
+        </p>
+      </div>
 
-        <style>
-        img {
-          border-radius: 50%;
-          width:250px;
-          height:250px;
-        }
-        </style>
-
-        <style>
-        img:hover {
-          animation: shake 0.5s;
-          animation-iteration-count: infinite;
-        }
-
-        @keyframes shake {
-          0% { transform: translate(1px, 1px) rotate(0deg); }
-          10% { transform: translate(-1px, -2px) rotate(-1deg); }
-          20% { transform: translate(-3px, 0px) rotate(1deg); }
-          30% { transform: translate(3px, 2px) rotate(0deg); }
-          40% { transform: translate(1px, -1px) rotate(1deg); }
-          50% { transform: translate(-1px, 2px) rotate(-1deg); }
-          60% { transform: translate(-3px, 1px) rotate(0deg); }
-          70% { transform: translate(3px, 1px) rotate(-1deg); }
-          80% { transform: translate(-1px, -1px) rotate(1deg); }
-          90% { transform: translate(1px, 2px) rotate(0deg); }
-          100% { transform: translate(1px, -2px) rotate(-1deg); }
-        }
-        </style>
-
-        <style>
-        img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        </style>
-
-  </head>
-
-
-  <body>
-    <body style="background-color:lightsalmon;">
-
-
-<div class="topnav">
-    <a href="./CarryOn.html">Home</a>
-      <a href="./Aboutus.html">About Us</a>
-      <a href="./Destinations.html">Destinations</a>
-    <a href="./Findbuddy.html">Find a travel buddy</a>
-</div>
-
-
-<div class="container">
-
-
-</div>
-
-
-<div>
-  <h1 style="text-align:center;"> Germany | Carry On </h1>
-    <h3 style="text-align:center;"> Meet Bonn. A student hub, birthplace of Beethoven, bursting with beer and blossoms.</h3>
-</div>
-
-   <img src="./static/images/cherrystreet_bonn.jpeg" alt="Cherry Blossom Street">
-
-<div>
-    <h2> What To Do </h2>
-      <p> Cherry Blossoms can be found in places other than Japan! </p>
-       <img src="images\cherrystreet_bonn.jpeg" alt="Cherry Blossom Street">
-
-      <p> Visit a multitude of museums. So many options they've coined the area 'Museum Mile'. </p>
-     <img src="images\art_exhibition_hall_museum_bonn.jpg" alt="Art Exhibition Museum">
-   <img src="images\kuntsmuseum_bonn.jpg" alt="Kunstmuseum Museum">
-  <img src="images\arithmeum_bonn.jpg" alt="Arithmeum Museum">
-</div>
-
-
-<div>
-
-  <h2> Where To Stay </h2>
-    <p> Motel One Bonn-Beethoven </p>
-     <img src="images\motel_beethoven_bonn.jpg" alt="Beethhoven Hotel">
-
-     <p> Arkadenschlösschen Bonn </p>
-       <img src="arkaden_bonn.jpg" alt="Arkaden Hotel">
-
-      <p> Ibis Hotel </p>
-    <img src="ibis_bonn.jpg" alt="Ibis Hotel">
-
-</div>
-
-
-<div>
-
-   <h2> Where To Eat </h2>
-
-     <p> Aennchen </p>
-      <img src="aennchen_bonn.jpg" alt="Aennchen Restaurant">
-
-       <p> Brauhaus Bönnsch </p>
-      <img src="brauhaus_bonn.jpg" alt="Brauhaus Restaurant">
-
-    <p> Eislabor </p>
-      <img src="eislabor_bonn.jpg" alt="Eislabor Restaurant">
-
-</div>
+      <div>
+        <h1> What to do in Bonn: </h1>
+        <img class="img-section" src= "./static/images/cherrystreet_bonn.jpeg" alt="Bonn" class="floatRight">
+        <dl class="section">
+          <dt><strong>Cherry Blossoms </strong></dt>
+          <dd> Cherry Blossoms can be found in places other than Japan and they're just a beautiful here.</dd>
+          <dt><strong>Muesums</strong></dt>
+          <dd>Visit a multitude of museums. So many options they've coined the area 'Museum Mile'</dd>
+          <dt><strong>The birth place of Beethoven</strong></dt>
+          <dd> Go and visit Beethoven's house while in Bonn.<br> Even if you only have a passing interest in classical music you’ll know something about Ludwig van Beethoven.</dd>
+        </dl>
+      </div>
+      <br>
+      <br>
+      <div>
+        <h1> Where to stay in Bonn: </h1>
+        <img class="img-section" src= "./static/images/arithmeum_bonn.jpg" alt="Bonn" class="floatRight">
+        <dl class="section">
+          <dt><strong>Moten One Bonn-Beethoven </strong></dt>
+          <dd> On a bustling corner 4 minutes by foot from the Beethoven House museum, <br>this laid-back hotel is a 5-minute walk from the Rhine River</dd>
+          <dt><strong>Arkadenschlösschen Bonn</strong></dt>
+          <dd>This property is also rated for the best value in Bonn! <br>Guests are getting more for their money when compared to other properties in this city.</dd>
+          <dt><strong>Ibis Hotel</strong></dt>
+          <dd> Cheap, cheerful, well located and has everything you need. What more can you want? Ibis is always a safe and great option. </dd>
+        </dl>
+      </div>
+      <div>
+        <h1> Where to eat in Bonn: </h1>
+        <img class="img-section" src= "./static/images/aennchen_bonn.jpg" alt="Bonn" class="floatRight">
+        <dl class="section">
+          <dt><strong>Aennchen</strong></dt>
+          <dd>Clearly a Bonn hidden gem - brilliant food, great service and all served in the LindenGarten on a warm summer's evening. <br>Really worth a visit when you are looking for good food and winelist.</dd>
+          <dt><strong>Brauhaus Bönnsch </strong></dt>
+          <dd>The unfiltered ale is a must at this congenial brewpub adorned with photographs of famous politicians great and failed, <br> from Willy Brandt to, yes, Arnold Schwarzenegger.</dd>
+          <dt><strong>Eislabor</strong></dt>
+          <dd> Delicious food and appealing prices, in a great decor.</dd>
+        </dl>
+      </div>
+      <div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
 
 
 
