@@ -4,58 +4,76 @@
 {% block head_css %}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='CSS/valetta.css')}}"></link>
-    <link rel="stylesheet" href="{{url_for('static',filename='CSS/bootstrap.css')}}"></link>
 
 {% endblock %}
 {% block content %}
 <link rel="stylesheet" text="text/css" href="/static/CSS/valletta.css">
 <link rel="stylesheet" text="text/css" href="/static/CSS/bootstrap.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<body>
-  <div class="topnav">
-    <a href="/CarryOn">Home</a>
-    <a href="/AboutUs">About Us</a>
-    <a href="/Destinations">Destinations</a>
-    <a href="/Findbuddy">Find a travel buddy</a>
-  </div>
-
-
+<body background="./static/images/backgroundall.jpg">
+    <div class="topnav">
+      <a href="/CarryOn">Home</a>
+      <a href="/AboutUs">About Us</a>
+      <a href="/Destinations">Destinations</a>
+      <a href="/Findbuddy">Find a travel buddy</a>
+    </div>
   <div>
-
     <img src= "./static/images/carryon.png" alt= "Carry On" width="800" align=center>
     <p>
-      <strong> Valletta, the Fortress City </strong> <br> This city will make you feel as though you're walking back in time. Avid about historical art and architecture? Then this may be the trip for you!
+      <strong> Valletta, </strong>Malta <br> <i>The fortress city. This city will make you feel as though you're walking back in time. Avid about historical art and architecture? Then this may be the trip for you!</i>
     </p>
   </div>
+  <br>
   <div>
-  <p1> What to do in Valletta:</p1>
-    <dl>
+    <h1>What to do in Valletta:</h1>
+    <img class="img-section" src= "./static/images/valletta.jpg" alt="Valletta" class="floatRight">
+      <dl class="section">
        <dt>City Walking Tour with St John's Co-Cathedral </dt>
        <dd> Hear history unfold with a tour guide unraveling the beginnings of Valletta, it's evolution and the events that shaped it into the city it is today. Walk the grounds littered with palaces and churches from the past and catch a sneak peak of Malta's Grand Harbour! </dd>
        <dt> Visit the Natural Museum of Archaeology </dt>
        <dd> Archaeology students we got you! This site once served as the main house of the Knights of the Order of St John. Explore antiquity in Valletta with objects dating back as far as 5000BC!</dd>
-       <dt></dt>
-       <dd></dd>
+       <dt>The Salluting Battery</dt>
+       <dd>The Saluting Battery is one of Malta's most vibrant visitor attractions where history is brought to life daily!</dd>
     </dl>
-  <p2> Where to stay in Valletta </p2>
-    <dl>
-       <dt></dt>
-       <dd></dd>
-       <dt></dt>
-       <dd></dd>
-       <dt></dt>
-       <dd></dd>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+    <h1>Where to stay in Valletta:</h1>
+    <img class="img-section" src= "./static/images/valletta1.jpg" alt="Valletta" class="floatRight">
+      <dl class="section">
+       <dt>The Vincent Boutique Suites</dt>
+       <dd> Slightly more pricey than Plazzo Saint Ursula but still just as clean, welcoming and not to mention close to the many attractions and resturants the city has to offer. Each room comes as a huge stylish, luxurious setting and a fridge to boot. Its even situated near the waterside and the sea if you fancy a morning dip, yet distant enough fromt he main streets so you can also have some peace and quiet.  </dd>
+       <dt>Plazzo Saint Ursula</dt>
+       <dd>This 16th century palace turned hostel is great for those on a budget plus, you can walk to anywhere you need to go! Treat yourself by heading up to their rooftop garden during the summer </dd>
+       <dt>Castille Hotel</dt>
+       <dd> Right in the heart of Valletta lies this quaint boutique hotel with historic features. This place boasts homemade food and a spectacular view of the Castille Square and beyond, whats not to love?</dd>
     </dl>
-  <p3> Where to eat in Valletta </p3>
-    <dl>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+    <h1>Where to eat in Valletta:</h1>
+    <img class="img-section" src= "./static/images/valletta2.jpg" alt="Valletta" class="floatRight">
+      <dl class="section">
        <dt> Le Majoliche </dt>
-       <dd></dd>
+       <dd>A magnicifent seafood restaurant located near the the shopping centre. The prices aren't terribly account draining either. Win Win </dd>
        <dt> Yard 32 </dt>
-       <dd></dd>
+       <dd>Experience atmospheric dining with live music amazing drinks at this cute small bar. I <em> highly </em> recommend their spiced gin </dd>
        <dt> il Pup </dt>
-       <dd></dd>
+       <dd> Located near St John's Cathedral and a short walk away from the harbour, this restaurant offers various choices of cuisine to satify your taste buds.  </dd>
     </dl>
+  </div>
+  <div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+
 
   </body>
 {% endblock %}

@@ -7,52 +7,70 @@
     <link rel="stylesheet" href="{{url_for('static',filename='CSS/bootstrap.css')}}"></link>
 {% endblock %}
 {% block content %}
+  <link rel="stylesheet" type="text/css" href="/static/CSS/porto.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.css">
 
+  <body background="./static/images/backgroundall.jpg">
+      <div class="topnav">
+        <a href="/CarryOn">Home</a>
+        <a href="/AboutUs">About Us</a>
+        <a href="/Destinations">Destinations</a>
+        <a href="/Findbuddy">Find a travel buddy</a>
+      </div>
+    <div>
+      <img src= "./static/images/carryon.png" alt= "Carry On" width="800" align=center>
+      <p>
+        <strong> Porto, </strong>Portugal; Paris of the East. <br> <i> Elected best European Destination in 2017, this city has an endless list of beautiful areas to explore. Rest assured, you won't be disappointed!!</i>
+      </p>
+    </div>
+    <div>
+      <h1> What to do in Porto:</h1>
+      <img class="img-section" src= "./static/images/Porto.jpg" alt="Porto" class="floatRight">
+        <dl class="section">
+          <dt><strong> "Keep an eye on the staircases, they like to move"~ Peter Weasley</strong></dt>
+          <dd> Visit the Lello Bookshop, famous for inspiring J.K Rowling in her Harry Potter series and considered one of the most gorgeous (and perplexing) bookshops in the world. </dd>
+          <dt><strong>Serralves</strong></dt>
+          <dd>The site of a large, very well maintained park. Take your camera and head over to the Museum of Contemporary Art designed by Álvaro Siza Vieira. Bonus: Check out the house decked out in an impressive Art Deco style. </dd>
+          <dt><strong> Riberia </strong></dt>
+          <dd>This is one of the most attractive districts of Porto, in which you get a feel for the ancient ambience thats surrounds the area. Bask in its serencity by taking a cruise on the Douro from here.</dd>
+        </dl>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div>
+      <h1>Where to stay in Porto:</h1>
+      <img class="img-section" src= "./static/images/porto1.jpg" alt="Porto" class="floatRight">
+        <dl class="section">
+          <dt><strong>The Artist Porto Hotel and Bistro</strong></dt>
+          <dd>Inspired by art and the taste for beauty, The Artist Porto Hotel & Bistro offers a modern and relaxed environment, where each detail brings a creative and original atmosphere.Restaurants and attractions are only 0.3 miles away from this hotel, so you get to save money due to the outstanding value and by walking. </dd>
+          <dt><strong>Moov Hotel Porto Norte</strong></dt>
+          <dd>The Moov Hotel boasts an impressive 8 floors, 129 rooms and 39 parking spaces (wow). Located close to the city centre, the walk to the metro station is only a mere 5 min so sightseeing is no problem whatsover! Cleanliness and practicality are all about this hotel and better yet, rooms start at 60 euros. Yes, you read that right.60.Euros. Well, what are you waiting for? Get booking!!!</dd>
+          <dt><strong>BessaHotel Boavista</strong></dt>
+          <dd> A luxury hotel for a fantastic price! Comes with a gym, business suite for those in Porto for such reasons and is also famously renowned for their hgih quality service and staff! Slightly further away form attractions compared to other hotels but you can't beat the professionalism here </dd>
+        </dl>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div>
+      <h1>Where to eat in Porto:</h1>
+      <img class="img-section" src= "./static/images/porto2.jpg" alt="Porto" class="floatRight">
+        <dl class="section">
+          <dt><strong>Viva Creative Kitchen</strong> </dt>
+          <dd> This contemproary seafood restaurant is so popular that you wouldnt't complete your trip here without visiting at least once. This cosy cuisine offers mouth-watering salads that even children would love. We promise, you <em>won't</em> be dissappointed!  </dd>
+          <dt> <strong>MISTUU Restaurant</strong></dt>
+          <dd>A local cuisine offering great food fusions consisting of the Mediterranean, European and Portugese dining, alongside South American and asian cultures too. So if you fancy something other than Portugese food for a change, try this place! Vegetarian and vegan friendly also</dd>
+          <dt><strong>De Norto Cafe</strong></dt>
+          <dd> A restaurant with nothing but positive reviews. The european cuisine here is to die for! Great for brunch and another hidden little gem if you're looking for a quiet place to dine by yourself or with others</dd>
+        </dl>
+      </div>
+      <div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
 
-<body>
-  <div class="topnav">
-    <a href="/CarryOn">Home</a>
-    <a href="/AboutUs">About Us</a>
-    <a href="/Destinations">Destinations</a>
-    <a href="/Findbuddy">Find a travel buddy</a>
-  </div>
-
-
-  <div>
-
-    <img src= "./static/images/carryon.png" alt= "Carry On" width="800" align=center>
-    <p>
-      <strong> Porto, </strong> <br>
-    </p>
-  </div>
-  <div>
-  <p1> What to do in Porto:</p1>
-    <dl>
-       <dt></dt>
-       <dd> </dd>
-       <dt></dt>
-       <dd></dd>
-       <dt></dt>
-       <dd></dd>
-    </dl>
-  <h1> Where to stay in Porto </h1>
-    <dl>
-       <dt></dt>
-       <dd></dd>
-       <dt></dt>
-       <dd></dd>
-       <dt></dt>
-       <dd></dd>
-    </dl>
-  <h1> Where to eat in Porto </h1>
-    <dl>
-       <dt></dt>
-       <dd></dd>
-       <dt></dt>
-       <dd></dd>
-       <dt></dt>
-       <dd></dd>
-    </dl>
-
-  </body>
+</body>
 {% endblock %}

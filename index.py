@@ -41,7 +41,7 @@ def germany():
 
     return render_template('Germany.html')
 
-@app.route("/ireland")
+@app.route("/Ireland")
 def ireland():
 
     return render_template('Ireland.html')
@@ -81,10 +81,15 @@ def Valletta():
 
     return render_template('Valletta.html')
 
-@app.route("/Verona")
+@app.route("/verona")
 def Verona():
 
     return render_template('Verona.html')
+
+@app.route("/salzburg")
+def salzburg():
+
+    return render_template('salzburg.html')
 
 
 @app.route("/email", methods=['POST'])

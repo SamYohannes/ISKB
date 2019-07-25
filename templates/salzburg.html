@@ -1,0 +1,80 @@
+
+{% extends "base.html" %}
+{% block title %}verona{% endblock %}
+
+{% block head_css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/salzburg.css')}}"></link>
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" text="text/css" href="/static/CSS/salzburg.css">
+<link rel="stylesheet" text="text/css" href="/static/CSS/bootstrap.css">
+
+
+<body background="./static/images/backgroundall.jpg">
+    <div class="topnav">
+      <a href="/CarryOn">Home</a>
+      <a href="/AboutUs">About Us</a>
+      <a href="/Destinations">Destinations</a>
+      <a href="/Findbuddy">Find a travel buddy</a>
+    </div>
+  <div>
+    <img src= "./static/images/carryon.png" alt= "Carry On" width="800" align=center>
+    <p>
+      <strong> Salzburg </strong> <br> <i>The city with breathtaking views of the Eastern Alps</i>
+    </p>
+  </div>
+  <br>
+  <div>
+    <h1>What to do in Salzburg:</h1>
+    <img class="img-section" src= "./static/images/salzbergriver.jpg" alt="Salzburg" class="floatRight">
+      <dl class="section">
+       <dt>Salzburg Fortress</dt>
+       <dd>Otherwise known as Hohensalzburg Castle, this grand Fortress looms over the Festungsberg Hill and has been a major power hive for the rulers of Salzburg since the 1000’s. <br> Inside are many rooms and wings to explore containing various artefacts and traditional decor; the Powder Room, Chapel and Golden Hall are just a few of the wonderful interiors that await inside</dd>
+       <dt>Mozart's Birthplace</dt>
+       <dd>The influence and fame of Mozart is evident in Salzburg. Born in a small house originally, the building was reconstructed as closely as possible to the original design after its destruction during World War II and is now open as a museum. A certified place to visit for music lovers</dd>
+       <dt>Mirabell Palace and Gardens</dt>
+       <dd>First established in 1606, this palace is recognised as a cultural heritage monument.As well as the striking Marble Hall which is a venue for Palace Concerts, the Palace also has a wondrous set of gardens that can be explored at your leisure.If you enjoy peaceful strolls around nature and being in the outdoors, the palace is a brilliant place to visit</dd>
+    </dl>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+  <h1>Where to stay in Slazburg:</h1>
+  <img class="img-section" src= "./static/images/salzburgbridge.jpg" alt="Salzburg" class="floatRight">
+    <dl class="section">
+       <dt>MEININGER Hotel Salzburg City Centre</dt>
+       <dd> Like the title quotes, the centre is where you'll find this well organised, well cleaned sizeable bedrooms. Comes with free breakfast and great for families or those travelling on a budget</dd>
+       <dt>Das Gruene Bio-Hotel zur Post</dt>
+       <dd> This hotel describes itself as a “home away from home.” Das Gruene Bio-Hotel zur Post aims to make one's stay as relaxing and enjoyable as possible. Given the close proximity of popular landmarks, such as MoenchsbergAufzug and Mozart's Birthplace , guests can easily experience some of Salzburg's most well known attractions. And, you guessed it, a stupendious value for money</dd>
+       <dt>Hotel Max 70</dt>
+       <dd>A little on the pricier side, this hotel is a hidden gem located slightly further from the city centre but no fear, its a short walk to the bus stop and only a 15 min bus ride to town.</dd>
+    </dl>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+  <h1>Where to eat in Salzburg:</h1>
+  <img class="img-section" src= "./static/images/salzbergstreet.jpg" alt="Salzburg" class="floatRight">
+    <dl class="section">
+       <dt>Restaurant Brunnauer</dt>
+       <dd> Arguably one of the best restaurants in Salzburg, this restaurant will introduce you to gourmet culinary delights made by one of the leading chefs in the country. Experience the taste and the best of Salzberg at remarkable value! Yes, you read that right!!</dd>
+       <dt>Barenwirt</dt>
+       <dd> <em> Travellers Choice 2018 Winner <br></em> Relish in authentic austrian flavours, located just a stone throw away from Mozart's birthplace. Vegetarian friendly</dd>
+       <dt>Meet2eat Salzburg</dt>
+       <dd>This one is a little far from the main centre, but absolutely perfect for late night dinings. From excellent service to even more excellent cuisine, Meet2eat has one of the most aesthestic looking food in the entirety of Salzburg. Great for couples  </dd>
+    </dl>
+  </div>
+  <div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+
+
+  </body>
+{% endblock %}
