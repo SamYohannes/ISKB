@@ -34,6 +34,60 @@ def destinations():
 
     return render_template('./Destinations.html')
 
+@app.route("/Findbuddy")
+def findbuddy ():
+
+    return render_template('./Findbuddy.html')
+
+@app.route("/Germany")
+def germany():
+
+    return render_template('./Germany.html')
+
+@app.route("/ireland")
+def ireland():
+
+    return render_template('./Ireland.html')
+
+@app.route("/marseille")
+def marseille():
+
+    return render_template('./marseille.html')
+
+@app.route("/paphos")
+def paphos():
+
+    return render_template('./paphos.html')
+
+@app.route("/Porto")
+def porto():
+
+    return render_template('./Porto.html')
+
+@app.route("/Rhonda")
+def Rhonda():
+
+    return render_template('./Rhonda.html')
+
+@app.route("/Romania")
+def romania():
+
+    return render_template('./Romania.html')
+
+@app.route("/Sweden")
+def Sweden():
+
+    return render_template('./Sweden.html')
+
+@app.route("/Valletta")
+def Valletta():
+
+    return render_template('./Valletta.html')
+
+@app.route("/Verona")
+def Verona():
+
+    return render_template('./Verona.html')
 
 
 # POST EMAIL FORM ACTION
